@@ -1,0 +1,66 @@
+@startuml
+!theme plain
+skinparam classAttributeIconSize 0
+
+package "krajjat.classes" {
+
+  class AnalysisParameters #6EEDFD
+
+  class Results #6EEDFD
+
+  class Experiment #ADC191
+  class Subject #ADC191
+  class Trial #ADC191
+  class TimeSeries #ADC191
+  class Sequence #ADC191
+  class Pose #ADC191
+  class Joint #ADC191
+
+  class AudioDerivative #ADC191
+  class Audio #ADC191
+  class Envelope #ADC191
+  class Pitch #ADC191
+  class Intensity #ADC191
+  class Formant #ADC191
+
+  class Graph #F7A374
+  class GraphPlot #F7A374
+
+  class GraphicSequence #F6AE2D
+  class GraphicPose #F6AE2D
+  class GraphicJoint #F6AE2D
+
+  class WindowArea #F6AE2D
+  class Video #F6AE2D
+  class Timer #F6AE2D
+}
+
+' ===== Inheritance =====
+TimeSeries <|-- Sequence
+TimeSeries <|-- AudioDerivative
+AudioDerivative <|-- Audio
+AudioDerivative <|-- Envelope
+AudioDerivative <|-- Pitch
+AudioDerivative <|-- Intensity
+AudioDerivative <|-- Formant
+
+' ===== Core composition / associations =====
+Experiment *-- "0..*" Subject
+Subject    *-- "0..*" Trial
+Trial      *-- "0..1    " Sequence
+Trial      *-- "0..1" AudioDerivative
+
+Sequence  *-- "0..*    " Pose
+Pose      *-- "0..*  " Joint
+
+Graph     *-- "0..*" GraphPlot
+
+GraphicSequence *-- "1" Sequence
+GraphicPose     *-- "1" Pose
+GraphicPose     *-- "0..*    " GraphicJoint
+GraphicJoint    *-- "1" Joint
+
+WindowArea *-- " 0..*" GraphicSequence
+WindowArea *-- "0..1 " Video
+Video      *-- "1" Timer
+@enduml
