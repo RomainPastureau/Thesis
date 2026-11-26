@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+  	<head>
+  		<meta charset="utf-8"/>
+    	<title>BLComp - AudioPreTest</title>
+
+    	<script src="jspsych-7.2.3/jspsych.js"></script>
+
+    	<script src="jspsych-7.2.3/plugin-audio-button-response.js"></script>
+    	<script src="jspsych-7.2.3/plugin-html-button-response.js"></script>
+    	<script src="jspsych-7.2.3/plugin-html-keyboard-response.js"></script>
+    	<script src="jspsych-7.2.3/plugin-survey-text.js"></script>
+    	<script src="jspsych-7.2.3/plugin-survey-multi-choice.js"></script>
+    	<script src="jspsych-7.2.3/plugin-fullscreen.js"></script>
+      <script src="jspsych-7.2.3/plugin-preload.js"></script>
+
+      <script src="res/intro.js"></script>
+      <script src="res/sounds.js"></script>
+
+   		<link href="jspsych-7.2.3/jspsych.css" rel="stylesheet" type="text/css">
+  	</head>
+
+  	<body>
+  		<title>BLComp - AudioPreTest</title>
+  	</body>
+
+	<script>
+
+    var jsPsych = initJsPsych({
+        timeline: timeline,
+        show_preload_progress_bar: true,
+        on_close: function() {
+          var resultJson = jsPsych.data.get().json();
+          jsPsych.data.displayData();
+        },
+        on_finish: function() {
+          var resultJson = jsPsych.data.get().json();
+          jsPsych.data.displayData();
+        },
+        on_trial_start: function() {
+          current_time = Date.now();
+        },
+    });
+
+    var trial = {
+      type: jsPsychAudioButtonResponse,
+      //stimulus: "sounds/001.mp3",
+      stimulus: jsPsych.timelineVariable('stimulus'),
+      id: jsPsych.timelineVariable('id'),
+      choices: ["Lleva mascarilla", "No lleva mascarilla"],
+      prompt: "¿El hablante tiene una mascarilla?",
+      response_allowed_while_playing: false,
+      data: jsPsych.timelineVariable('data'),
+    }
+
+    var experiment_loop = {
+      timeline: [trial],
+      timeline_variables: stimuli_experiment,
+      randomize_order: true
+    };
+
+		/* create timeline */
+		var timeline = [];
+
+		timeline.push({
+    		type: jsPsychPreload,
+    		auto_preload: true
+  	});
+
+		//Add fullscreen
+		timeline.push({
+  			type: jsPsychFullscreen,
+  			message: 'El siguiente experimento debe tomarse en pantalla completa.</br>'+
+  					'Por favor, no pulsar la tecla ESC durante el experimento.</br>'+
+  					'Si esto sucede, presione la tecla <b>F11</b> en Windows '+
+  					'o la combinación de teclas <b>Control-⌘-F</b> en Mac '+
+  					'para regresar al modo de pantalla completa.</br>',
+  			button_label: 'Continuar',
+  			fullscreen_mode: true,
+		});
+
+		//Add introduction
+		timeline.push(introduction);
+
+    timeline.push(soundcheckinstructions);
+
+    //Sound check
+    var soundchecktrial = {
+        type: jsPsychAudioButtonResponse,
+        stimulus: "sounds/test.mp3",
+        button_label: ['Sí', 'No, intentar de nuevo'],
+        prompt: "<br/>¿Puedes oir este sonido?",
+    };
+
+    // var soundcheckloop = {
+    //     timeline: [soundchecktrial],
+    //     loop_function: function(data){
+    //         if(jsPsych.pluginAPI.compareKeys(data.values()[0].response, 'No, intentar de nuevo')){
+    //             return true;
+    //         } else {
+    //             return false;
+    //         }
+    //     }
+    // }
+
+    timeline.push(soundchecktrial);
+
+		//Add instructions task
+		timeline.push(instructions1);
+
+		//Experiment
+		timeline.push(experiment_loop);
+
+		//Remove fullscreen
+		timeline.push({
+  			type: jsPsychFullscreen,
+  			message: 'El siguiente experimento debe tomarse en pantalla completa.</br>'+
+  					'Por favor, no pulsar la tecla ESC durante el experimento.</br>'+
+  					'Si esto sucede, presione la tecla <b>F11</b> en Windows '+
+  					'o la combinación de teclas <b>Control-⌘-F</b> en Mac '+
+  					'para regresar al modo de pantalla completa.</br>',
+  			button_label: 'Continuar',
+  			fullscreen_mode: false
+		});
+
+		/* start the experiment */
+		jsPsych.run(timeline);
+
+	</script>
+</html>

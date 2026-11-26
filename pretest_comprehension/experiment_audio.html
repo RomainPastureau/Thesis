@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+  	<head>
+        <meta charset="utf-8"/>
+        <title>BLComp - AudioPreTest</title>
+
+        <script src="jsPsych-7.2.3/jspsych.js"></script>
+
+        <script src="jsPsych-7.2.3/plugin-audio-button-response.js"></script>
+        <script src="jsPsych-7.2.3/plugin-html-button-response.js"></script>
+        <script src="jsPsych-7.2.3/plugin-html-keyboard-response.js"></script>
+        <script src="jsPsych-7.2.3/plugin-survey-text.js"></script>
+        <script src="jsPsych-7.2.3/plugin-survey-multi-choice.js"></script>
+        <script src="jsPsych-7.2.3/plugin-fullscreen.js"></script>
+        <script src="jsPsych-7.2.3/plugin-preload.js"></script>
+
+        <script src="res/intro.js"></script>
+        <script src="res/outro.js"></script>
+        <script src="res/sounds.js"></script>
+
+        <script src="jatos.js"></script>
+
+       	<link href="jsPsych-7.2.3/jspsych.css" rel="stylesheet" type="text/css">
+    </head>
+
+  	<body>
+  		<title>BLComp - AudioPreTest</title>
+  	</body>
+
+	<script>
+
+    var jsPsych = initJsPsych({
+      show_progress_bar: true,
+      auto_update_progress_bar: false,
+      message_progress_bar: 'Porcentaje completo',
+      on_close: () => jatos.endStudy(jsPsych.data.get().json()),
+      on_finish: () => jatos.endStudy(jsPsych.data.get().json())
+    });
+
+		/* create timeline */
+		var timeline = [];
+
+		timeline.push({
+    		type: jsPsychPreload,
+    		auto_preload: true
+  	});
+
+		//Add fullscreen
+		timeline.push({
+  			type: jsPsychFullscreen,
+  			message: 'El siguiente experimento debe realizarse en pantalla completa.</br>'+
+  					'Por favor, no pulsa la tecla ESC durante el experimento.</br>'+
+  					'Si esto sucede, presiona la tecla <b>F11</b> en Windows '+
+  					'o la combinación de teclas <b>Control-⌘-F</b> en Mac '+
+  					'para regresar al modo de pantalla completa.</br>',
+  			button_label: 'Continuar',
+  			fullscreen_mode: true,
+		});
+
+		//Add introduction
+		timeline.push(introduction);
+
+    timeline.push(soundcheckinstructions);
+
+    //Sound check
+    var soundchecktrial = {
+        type: jsPsychAudioButtonResponse,
+        stimulus: "sounds/test.wav",
+        choices: ['Sí', 'No, intentar de nuevo'],
+        response_allowed_while_playing: false,
+        prompt: "<br/>¿Puedes oír este sonido?",
+        data: jsPsych.timelineVariable('data'),
+    }
+
+    var soundcheckloop = {
+        timeline: [soundchecktrial],
+        loop_function: function(data){
+            //if(jsPsych.pluginAPI.compareStrings(data.values()[0].response, 'No, intentar de nuevo')){
+            if (data.values()[0].response == 1) {
+                return true;
+            } else {
+                console.log(data.values()[0].response);
+                return false;
+            }
+        }
+    }
+
+    timeline.push(soundcheckloop);
+
+		//Add instructions task
+		timeline.push(instructions1);
+
+    var n_trials = stimuli_experiment.length;
+
+    var trial = {
+      type: jsPsychAudioButtonResponse,
+      //stimulus: "sounds/001.mp3",
+      stimulus: jsPsych.timelineVariable('stimulus'),
+      id: jsPsych.timelineVariable('id'),
+      choices: ["Lleva mascarilla", "No lleva mascarilla"],
+      prompt: "<br/>¿El hablante tiene una mascarilla?",
+      response_allowed_while_playing: false,
+      data: jsPsych.timelineVariable('data'),
+      on_finish: function() {
+          // at the end of each trial, update the progress bar
+          // based on the current value and the proportion to update for each trial
+          var curr_progress_bar_value = jsPsych.getProgressBarCompleted();
+          jsPsych.setProgressBar(curr_progress_bar_value + (1/n_trials));
+      },
+    }
+
+    var experiment_loop = {
+      timeline: [trial],
+      timeline_variables: stimuli_experiment,
+      randomize_order: true
+    };
+
+		//Experiment
+		timeline.push(experiment_loop);
+
+		//Remove fullscreen
+		timeline.push({
+  			type: jsPsychFullscreen,
+  			message: 'El siguiente experimento debe tomarse en pantalla completa.</br>'+
+  					'Por favor, no pulsar la tecla ESC durante el experimento.</br>'+
+  					'Si esto sucede, presione la tecla <b>F11</b> en Windows '+
+  					'o la combinación de teclas <b>Control-⌘-F</b> en Mac '+
+  					'para regresar al modo de pantalla completa.</br>',
+  			button_label: 'Continuar',
+  			fullscreen_mode: false
+		});
+
+    //Outro
+    timeline.push(outro);
+
+		/* start the experiment */
+    jatos.onLoad(() => {
+      jatos.addAbortButton();
+      jsPsych.run(timeline);
+    });
+
+	</script>
+</html>
