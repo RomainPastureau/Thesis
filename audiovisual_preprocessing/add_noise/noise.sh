@@ -1,0 +1,1 @@
+for file in /mnt/02_Cropped_videos/K01/*.mp4; do ffmpeg -i $file -i /mnt/Noise/Cocktail_party_2_-10dB.wav -filter_complex "[0:a][1:a]amerge=inputs=2[a]" -map 0:v -map "[a]" -c:v copy -ac 2 -shortest -y /mnt/04_With_Noise_10dB/K01/$(basename "$file"); done

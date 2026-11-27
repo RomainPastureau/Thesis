@@ -1,0 +1,1 @@
+ffmpeg -i /mnt/02_Cropped_videos/K03/R071.mp4 -vf scale=out_range=full -color_range 2 -pix_fmt yuvj420p /mnt/02_Normalized_videos/K03/R071.mp4

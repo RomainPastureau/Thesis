@@ -1,0 +1,1 @@
+ffmpeg -i $file -c copy -an /mnt/05_Video_Only/K06/video.mp4

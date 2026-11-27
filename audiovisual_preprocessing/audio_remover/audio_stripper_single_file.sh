@@ -1,0 +1,1 @@
+for file in /mnt/04_With_Noise_5dB/K06/*.mp4; do ffmpeg -i $file -c copy -an /mnt/05_Video_Only/K06/$(basename "$file"); done

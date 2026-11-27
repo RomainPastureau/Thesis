@@ -1,0 +1,1 @@
+for folder in /mnt/01_Preprocessed_videos/*; do for file in /mnt/01_Preprocessed_videos/$(basename "$folder")/*.mp4; do ffmpeg -y -i $file /mnt/04_Cut_Audio/$(basename "$folder")/$(basename "${file%.*}").wav; done; done

@@ -1,0 +1,2 @@
+declare -a array=( 1 2 3 4 )
+for snr in "${array[@]}"; do for folder in /mnt/03_Normalized_audiovisual/Normalized_bodies/*; do for file in /mnt/03_Normalized_audiovisual/Normalized_bodies/$(basename "$folder")/*.mp4; do ffmpeg -i $file -i /mnt/05_Noised_audio/Noised_audio_SNR_$(basename "$snr")/$(basename "$folder")/$(basename "${file%.*}").wav -nostdin -map 0:v -map 1:a -c:v copy -ac 2 -shortest -y /mnt/04a_Noised_audiovisual_$(basename "$snr")dB/$(basename "$folder")/$(basename "$file"); done; done; done

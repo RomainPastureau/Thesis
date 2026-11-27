@@ -1,0 +1,1 @@
+for folder in /mnt/03_Normalized_audiovisual/Normalized_faces/*; do for file in /mnt/03_Normalized_audiovisual/Normalized_faces/$(basename "$folder")/*.mp4; do ffmpeg -i $file -y -c copy -an /mnt/04b_Audioless_audiovisual/Audioless_faces/$(basename "$folder")/$(basename "$file"); done; done

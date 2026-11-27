@@ -1,0 +1,1 @@
+ffmpeg -nostdin -y -i /mnt/01_Preprocessed_videos/K05/R046.mp4 -filter_complex "crop=375:211:686:263" -vcodec libx264 -crf 0 /mnt/03_Cropped_faces/K05/R046.mp4

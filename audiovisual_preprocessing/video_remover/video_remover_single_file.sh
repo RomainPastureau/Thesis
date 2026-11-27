@@ -1,0 +1,1 @@
+ffmpeg -i /mnt/04_With_Noise_15dB/K05/R046.mp4 -i /mnt/black.mp4 -map 0:a -map 1:v -c copy -shortest /mnt/06_Audio_Only_15dB/K05/R046.mp4

@@ -1,0 +1,566 @@
+001
+¿Qué fruta come Tom (el gato)?
+Plátano
+Manzana
+Sandía
+Naranja
+
+002
+¿Qué objeto intenta lanzar al Correcaminos?
+Un yunque
+Un piano
+Una bola de demolición
+Una roca
+
+003
+¿Encima de qué objeto se refugian Tom (el gato) y Jerry (el ratón)?
+Un reloj
+Una cómoda
+Un sillón
+Una lavadora
+
+004
+¿Qué hace Jerry (el ratón) cuando Tom (el gato) le alcanza?
+Lee el periódico
+Ve la televisión
+Duerme
+Come comida de la nevera
+
+005
+¿Qué le pasa al Coyote en la primera historia?
+Le cae un rayo
+Un cartucho de dinamita le explota en la mano
+Una roca lo aplasta
+Finalmente se come al Correcaminos
+
+006
+¿Qué intenta hacer el hombre?
+Pintar una casa
+Preparar la comida
+Plantar flores
+Construir un barco
+
+007
+¿Por qué deja Tom (el gato) de escaparse del perro?
+Seduce a una gata
+Intenta atrapar a Jerry (el ratón)
+Cae desde un acantilado
+El perro se golpea contra una valla
+
+008
+¿Qué intentan partir Tom (el gato),\n\nJerry (el ratón) y el perro?
+Un filete
+Un taco de billetes
+Un pastel
+Un trozo de queso
+
+009
+¿Qué tira la Pantera Rosa al suelo?
+La piel del plátano
+Un trozo de papel
+Las llaves de su coche
+Una lata de soda
+
+010
+¿Qué instrumento toca la Pantera Rosa?
+El violín
+El tambor
+El saxofón
+El piano
+
+011
+¿A quién intenta proteger\n\nla Pantera Rosa con un paraguas?
+A una señora mayor
+A un perro
+A un bebé
+A un hombre
+
+012
+¿A quién evita Jerry (el ratón) que se coma el gato callejero?
+A Tom (el gato)
+Al perro
+A una señora mayor
+A la Pantera Rosa
+
+013
+¿Qué actividad está intentando practicar Tom (el gato)?
+Pesca
+Jardinería
+Cocina
+Lectura
+
+014
+¿Qué intenta comprar la Pantera Rosa?
+Gusanos
+Huevos
+Tomates
+Clavos
+
+015
+¿Qué animal duerme en la hamaca del hombre?
+Un perro
+Un pato
+Un mapache
+Un elefante
+
+016
+¿Qué le permite hacer el traje al Coyote?
+Volar
+Correr muy rápido
+Cavar
+Pegarse a las paredes
+
+017
+¿Qué se traga Tom (el gato)?
+Una rana
+Una mosca
+Un yunque
+A Jerry (el ratón)
+
+018
+¿Cuál de estos es parte del equipaje del Coyote?
+Una vela
+Un cohete
+Una espada
+Una banda elástica
+
+019
+¿Dónde ocurre la historia?
+En una obra
+En una piscina
+En un barco
+En el supermercado
+
+020
+¿Qué le molesta a la Pantera Rosa?
+Una mosca
+Su vecino
+Un ratón
+La cola del banco
+
+021
+¿Qué hay en la caja fuerte?
+La Pantera Rosa
+Un diamante
+Un cartucho de dinamita
+Nada
+
+022
+¿A qué contenedor echa Tom (el gato) la leche?
+A un cuenco
+A un vaso
+A una cazuela
+A una botella
+
+023
+¿Qué conduce el Coyote en la segunda historia?
+Un cohete
+Un caballo
+Una motocicleta
+Un patinete
+
+024
+¿Qué utiliza Tom (el gato) como cebo?
+A Jerry (el ratón)
+La cola del perro
+Un gusano
+Un cartucho de dinamita
+
+025
+¿A qué juego juegan Tom (el gato)\n\ny Jerry (el ratón)?
+Al tres en raya
+A los dados
+A los bolos
+A los dardos
+
+026
+¿Qué tiene la Pantera Rosa\n\nen la boca cuando estornuda?
+Uñas
+Un cigarro
+Galletas 
+Una flor
+
+027
+¿Quién aparece en esta historia?
+Un ladrón
+Una señora mayor
+Un ratón
+Un pintor
+
+028
+¿Quién roba comida del frigorífico de la Pantera Rosa?
+Un ratón
+Un gato
+Un perro
+Un mapache
+
+029
+¿Qué le ocurre al Coyote en la primera historia?
+Explota
+Cae de un acantilado
+Se choca contra la  pared
+Un coche lo aplasta
+
+030
+¿Quién aparece en esta historia\n\nademás de la Pantera Rosa?
+Un jardinero
+Un policía
+Un cazador
+Un ratón
+
+031
+¿Qué utiliza el Coyote para atraer al Correcaminos?
+Un cuenco con semillas
+Clases de piano gratuitas
+Un pájaro hembra
+Una ruleta
+
+032
+¿Dónde ocurre la historia?
+En la playa
+En una casa
+En el cine
+En el parque
+
+033
+¿Qué ponen Tom (el gato) y el otro gato en la\n\nmadriguera de Jerry (el ratón) para hacerle salir?
+Gas
+Agua 
+Un cartucho de dinamita
+Queso 
+
+034
+¿Qué herramienta utilizan al final Tom (el gato),\n\nJerry (el ratón) y el perro?
+Un palillo
+Una pala
+Un martillo
+Una escoba
+
+035
+¿Qué trata de robar el ratón?
+Una sandía
+Llaves 
+Un pollo
+Una radio
+
+036
+¿Dónde quieren dormir tanto Tom (el gato)\n\ncomo Jerry (el ratón) y discuten por ello?
+En una hamaca
+En una cama
+En un sofá
+En una alfombra
+
+037
+¿Qué tiene la Pantera Rosa guardado en la caja fuerte?
+Un diamante
+Lingotes de oro
+Un perrito
+Una caja fuerte más pequeña
+
+038
+¿Qué le echa Jerry (el ratón) al café de Tom (el gato)?
+Arena 
+Rocas
+Veneno
+Harina
+
+039
+¿Dónde ocurre la historia?
+En un concierto
+En un bar
+En una biblioteca
+En un avión
+
+040
+¿Con qué se atraganta Tom (el gato)?
+Con una manzana
+Con un hueso
+Con Jerry (el ratón)
+Con una bola de billar
+
+041
+¿Qué utiliza Tom (el gato) para golpear al perro?
+Un bate de béisbol
+Un martillo
+Una viga
+Una bola de bolos
+
+042
+¿Qué le hace Jerry (el ratón) a Tom (el gato) mientras duerme?
+Lo lanza al aire
+Le echa de un barco
+Le mete en la casa del perro
+Lo incrimina por evasión de impuestos
+
+043
+¿Dónde pone el Coyote los cartuchos de dinamita?
+En un barril
+En un cuenco con semillas
+Debajo de una mesa
+Detrás de una falsa pared
+
+044
+¿Por quién intenta hacerse pasar la Pantera Rosa?
+Un superhéroe
+Un policía
+Un músico
+Un zombi
+
+045
+¿Qué sale de la boca del Coyote\n\nal final de la historia?
+Teclas del piano
+Cartuchos de dinamita
+Pequeños pájaros
+Plumas 
+
+046
+¿Qué aplasta al Coyote al final de la segunda historia?
+Una roca
+Un piano
+Un avión
+Un cactus gigante
+
+047
+¿Qué utiliza el Coyote en la segunda\n\nhistoria para atrapar al Correcaminos?
+Una banda elástica
+Un fotomatón
+Una caja invisible
+Un bono para un crucero
+
+048
+¿Qué utiliza el Coyote como\n\ncontrapeso para lanzarlo al airer?
+Una roca
+Una estatua
+Un yunque
+Un coche
+
+049
+¿Qué pone el Coyote en la mitad de la carretera\n\npara intentar frenar al Correcaminos?
+Una pared de ladrillos
+Un peaje
+Una pila de rocas
+Pegamento 
+
+050
+¿A quién intenta ayudar la Pantera Rosa?
+A una señora mayor
+A un pájaro
+A un ladrón
+A un pintor
+
+051
+¿Qué intenta hacer Tom (el gato)?
+Pescar
+Cocinar
+Dormir
+Ver la televisión
+
+052
+¿Qué atraviesa el Correcaminos en la segunda historia?
+Una plata de metal
+Una pared de ladrillo
+Un cuadro
+Un espejo
+
+053
+¿Qué pone Jerry (el ratón) en la boca de Tom (el gato)?
+Un termómetro
+Un perrito
+Un yunque
+Un jabón
+
+054
+En la segunda historia, ¿qué intenta\n\nlanzar el Coyote utilizando una banda elástica? 
+Un yunque
+Un barril
+Un cartucho de dinamita
+Una roca
+
+055
+¿Cómo intenta el Coyote pillar al Correcaminos?
+En un cohete
+En una motocicleta
+En un tren
+En un coche
+
+056
+¿Qué agarra Tom (el gato) en lugar de a Jerry (el ratón)?
+La mano de otro gato
+El pie del perro
+Un cable eléctrico
+Un cartucho de dinamita
+
+057
+¿Dónde ata Jerry (el ratón) la caña de pescar de Tom (el gato)?
+A la pata del perro
+A la cola de Tom (el gato)
+A un tiburón
+A un puercoespín
+
+058
+¿Dónde esconde el Coyote los explosivos?
+En un piano
+En un barril
+En un Correcaminos falso
+En un micrófono
+
+059
+¿Dónde ata el Coyote el globo?
+A un yunque
+A una roca
+A una bomba
+A sí mismo
+
+060
+En la primera historia,\n\n¿qué pone el Coyote en la carretera?
+Pegamento 
+Clavos 
+Un cuenco con semillas
+Un peaje
+
+061
+¿Qué le envía el gato a Jerry (el ratón),\n\nque posteriormente éste comerá?
+Una tuerca
+Un trozo de queso
+Una manzana podrida
+Rocas pintadas como aceitunas
+
+062
+¿Qué animal aparece en la\n\nhistoria con la Pantera Rosa?
+Un toro
+Un perro
+Un pájaro
+Una jirafa
+
+063
+¿A dónde decide ir la Pantera Rosa?
+Al gimnasio
+A una clase de arte
+Al cine
+Al mercado
+
+064
+¿Qué usa Tom (el gato) para pegar al perro?
+Un ladrillo
+Un bate de béisbol
+Una sartén
+Una botella de vino
+
+065
+¿En qué se convierten las semillas\n\ncuando el Coyote les echa agua?
+Un tornado
+Un árbol
+Una roca
+Una casa
+
+066
+¿Dónde dispara el cazador en\n\nlugar de a la Pantera Rosa?
+Una colmena
+El trasero de un león
+Una sandía
+Un depósito de gas
+
+067
+¿Quién pega a la Pantera Rosa?
+Un ratón
+Un jardinero
+Una señora mayor
+Un orangután
+
+068
+En la segunda historia, qué utiliza el\n\nCoyote para intentar lanzar la roca?
+Una catapulta
+Una banda elástica
+Una bomba
+Un ventilador gigante
+
+069
+¿Qué hace la Pantera Rosa antes de irse a dormir?
+Lavarse los dientes
+Ejercicio
+Ponerse el pijama
+Darse un baño
+
+070
+¿Qué intenta hacer el Coyote?
+Cavar un agujero en la tierra
+Colocar una banda elástica entre dos rocas
+Poner un cactus en la carretera
+Empujar una roca cuesta arriba
+
+071
+¿Qué animals son el centro de la historia?
+Ovejas
+Perros
+Ratones 
+Moscas 
+
+072
+¿Dónde pone veneno Tom (el gato)?
+En un cuenco de leche
+En un vaso de agua
+En una manzana
+En un trozo de queso
+
+073
+En la primera historia ¿qué provoca\n\nque le salga barba al Coyote?
+Humo
+Nata montada
+Cartuchos de dinamita
+Plumas 
+
+074
+¿A quién intenta ayudar la Pantera Rosa?
+A un pajarito
+A una señora mayor
+A un bombero
+A un jardinero
+
+075
+En la segunda  historia, ¿con qué intenta\n\nel Coyote que se tropiece el Correcaminos? 
+Con una pierna falsa
+Con una banda elástica
+Con una viga de madera
+Con una roca pintada
+
+076
+En la segunda historia, ¿con qué se choca el Coyote?
+Con un cactus
+Con una pared de ladrillo
+Con un tren
+Con una casa
+
+077
+¿Quién aparece en la historia junto a la Pantera Rosa?
+Un pintor
+Una señora mayor
+Un jardinero
+Un bombero
+
+078
+¿Qué aplasta a Coyote en la primera historia? 
+Un camión
+Una roca
+Un yunque
+Un tren
+
+079
+¿Qué recibe Jerry (el ratón) en su casa?
+Dos ratones
+Dos perros
+Dos pájaros
+Dos mapaches
+
+080
+¿Cuál es el objeto central de esta historia?
+Una caja fuerte
+Un piano
+Una hamaca
+Un filete
+
+081
+En la primera historia, ¿qué medio\n\nde transporte conduce el Coyote?
+Un helicóptero
+Un camión
+Un tren
+Una bicicleta

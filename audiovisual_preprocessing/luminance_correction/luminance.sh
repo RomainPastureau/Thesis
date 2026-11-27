@@ -1,0 +1,1 @@
+for folder in /mnt/02_Cropped_videos/*; do for file in /mnt/02_Cropped_videos/$(basename"$folder")/*.mp4; do ffprobe -f lavfi movie=$file,signalstats -show_entries frame_tags=lavfi.signalstats.YAVG > /mnt/Luminance/$(basename"$folder")/$(basename "$file" .avi)_lumstats.txt; done; done

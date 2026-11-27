@@ -1,0 +1,1 @@
+for file in /mnt/01_Preprocessed_videos/K06/*.mp4; do ffmpeg -nostdin -y -i $file -filter_complex "crop=950:534:364:126" -vcodec libx264 -crf 0 /mnt/K06/$(basename "$file"); done

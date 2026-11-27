@@ -1,0 +1,1 @@
+ffmpeg -y -i /mnt/01_Preprocessed_videos/K001/R002.mp4 -filter_complex "lutyuv=y=val*0.9758963670136882" /mnt/02_Normalized_videos/K01/R002.mp4

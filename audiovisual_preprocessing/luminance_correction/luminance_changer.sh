@@ -1,0 +1,1 @@
+while IFS=$'\t' read -r -a myArray; do ffmpeg -nostdin -y -i /mnt/02_Cropped_faces/$(basename "${myArray[0]}")/$(basename "${myArray[1]}") -filter_complex "lutyuv=y=val*${myArray[2]}" /mnt/03_Normalized_faces/$(basename "${myArray[0]}")/$(basename "${myArray[1]}"); done < /mnt/Luminance/corrections.txt

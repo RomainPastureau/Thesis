@@ -1,0 +1,1 @@
+for file in /mnt/Scripts/VideoStripper/black.mp4 -map 0:a -map 1:v -c copy -shortest /mnt/06_Audio_Only_5dB/K06/$(basename "$file"); done
