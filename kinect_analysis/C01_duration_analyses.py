@@ -208,9 +208,9 @@ def retelling_duration_by_subject(n, df_clean, generate_figure=True, ax=None):
 
         k06 = next(s for s in order if "K06" in s)
         sig_pairs = [
-            (laura, next(s for s in order if "K02" in s)),
-            (laura, next(s for s in order if "K03" in s)),
-            (laura, next(s for s in order if "K05" in s)),
+            (k06, next(s for s in order if "K02" in s)),
+            (k06, next(s for s in order if "K03" in s)),
+            (k06, next(s for s in order if "K05" in s)),
         ]
 
         y_max = df_clean["Retelling duration"].max()

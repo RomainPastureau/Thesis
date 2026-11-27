@@ -22,5 +22,5 @@ def extract_nth_frame(folder, frame_n):
         saved = cv2.imwrite(str(output_path), frame)
 
 if __name__ == "__main__":
-    path = "D:/ProtonDrive/My files/Documents/40 Projets professionnels/42 BCBL/42.05 BodyLingual/Media/Krajjat/"
+    path = "Krajjat/"
     extract_nth_frame(path, 100)

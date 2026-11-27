@@ -16,7 +16,7 @@ Short scripts to list and randomise the cartoons used in the first production st
 Pygame script displaying a countdown and a timer as a visual aid during the first production study (C2-2.1.4).
 
 ### *kinect_preprocessing*
-Contains all the scripts used to pre-process the Kinect data in the first production study (C2-2.1.5): correction of a single specific file (A01), assembling of individual frames (A02), pre-processing of mocap sequences (A03), pre-processing of audio recordings (A04), and dataframe generation (A05).
+Contains all the scripts used to pre-process the Kinect data in the first production study (C2-2.1.5): correction of a single specific file (A01), assembling of individual frames (A02), pre-processing of mocap sequences (A03), generation of audio derivatives (A04), and dataframe generation (A05).
 
 ### *kinect_analysis*
 Scripts used for the computationally intensive analyses run on a cluster (B scripts: cross-correlation, coherence), statistical analyses and figure generation (C and D scripts). See C2-2.1.6.
@@ -25,7 +25,7 @@ Scripts used for the computationally intensive analyses run on a cluster (B scri
 Short scripts to randomise the cartoons used in the second production study (C2-2.2.2), and to find the exact time codes of the cartoon excerpts from the original cartoon videos.
 
 ### *qualisys_preprocessing*
-Contains all the scripts used to pre-process the Qualisys data in the second production study (C2-2.2.5): pre-processing of audio recordings (A01) and mocap sequences (A02), generation of audio derivatives (A03), and dataframe generation (A04).
+Contains all the scripts used to pre-process the Qualisys data in the second production study (C2-2.2.5): pre-processing of audio recordings (A01) and mocap sequences (A02),  (A03), and dataframe generation (A04).
 
 ### *qualisys_analysis*
 Scripts used for the computationally intensive analyses run on a cluster (B scripts: cross-correlation, coherence), statistical analyses and figure generation (C and D scripts). See C2-2.2.6.
